@@ -8,4 +8,4 @@ google.generativeai
 pyrebase4
 tensorflow
 dotenv
-
+scikit-image

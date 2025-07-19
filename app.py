@@ -245,6 +245,12 @@ Giúp người dùng cảm thấy:
 4.Không bị hoang mang hay lo sợ""")
 
 # ------------- LOAD MODEL -------------
+import zipfile
+
+# Giải nén file nếu model chưa tồn tại
+if not os.path.exists(MODEL_PATH):
+    with zipfile.ZipFile("model.zip", "r") as zip_ref:
+        zip_ref.extractall(".")
 loaded_model = load_model(MODEL_PATH)
 
 # ------------- SIDEBAR MENU -------------

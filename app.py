@@ -14,7 +14,6 @@ import google.generativeai as genai
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import LabelEncoder
-import cv2
 from glob import glob
 from skimage import io
 import re

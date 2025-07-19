@@ -7,6 +7,4 @@ google.generativeai
 pyrebase4
 tensorflow
 dotenv
-cv2
-glob
-re
+

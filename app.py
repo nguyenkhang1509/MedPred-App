@@ -19,6 +19,7 @@ from skimage import io
 import re
 from login_ui import login_ui
 from firebase_auth import auth
+import gdown
 
 def main():
     st.title("MedPredict - Dự đoán khối u não")
@@ -245,12 +246,9 @@ Giúp người dùng cảm thấy:
 4.Không bị hoang mang hay lo sợ""")
 
 # ------------- LOAD MODEL -------------
-import zipfile
-
-# Giải nén file nếu model chưa tồn tại
 if not os.path.exists(MODEL_PATH):
-    with zipfile.ZipFile("model.zip", "r") as zip_ref:
-        zip_ref.extractall(".")
+    url = "https://drive.google.com/uc?id=1MInZtmxQLNgVBTKkHHsinr7QqmZdeKDk"
+    gdown.download(url, MODEL_PATH, quiet=False)
 loaded_model = load_model(MODEL_PATH)
 
 # ------------- SIDEBAR MENU -------------

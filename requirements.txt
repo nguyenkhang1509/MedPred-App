@@ -1,4 +1,7 @@
-streamlit
 matplotlib
 pandas
-scikit-learn
+streamlit
+streamlit_option_menu
+numpy
+google.generativeai
+pyrebase4

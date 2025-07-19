@@ -9,3 +9,4 @@ pyrebase4
 tensorflow
 dotenv
 scikit-image
+gdown
